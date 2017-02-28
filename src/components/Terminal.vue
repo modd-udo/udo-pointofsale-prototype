@@ -73,7 +73,7 @@
         <div class="columns small-6 text-center">
           <button class="small alert button">Cancel Sale</button>
           <button class="small button">Place on Hold</button>
-          <button class="small success button">Finalize Order</button></div>
+          <button class="small success button">Finalise Sale</button></div>
         <div class="columns small-3 text-right"><h4> Balance Due: $100.00</h4></div>
       </div>
 
