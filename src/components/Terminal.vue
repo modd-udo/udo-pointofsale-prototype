@@ -1,5 +1,9 @@
 <template>
   <div class="pos-dashboard">
+    <div class="pos-sales">
+      <terminal-sales></terminal-sales>
+    </div>
+    <div class="pos-terminal-body">
     <div class="pos-top">
       <p></p>
       <div class="row">
@@ -120,18 +124,27 @@
 
       </div>
     </div>
+      </div>
   </div>
 </template>
 <style lang="scss">
   .pos-dashboard {
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    .pos-sales {
+      flex: 0 0 40px;
+    }
+    .pos-terminal-body {
+      display:flex;
+      flex-direction: column;
+      flex: 1 1;
+    }
     label select {
       display: inline;
       width: auto;
     }
-    flex-grow: 1;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
     .pos-finalise {
       position: fixed;
       top: 0;
@@ -183,6 +196,8 @@
 <script lang="babel">
   import TerminalItem from './TerminalItem'
 
+  import TerminalSales from './TerminalSales'
+
   export default{
     data() {
       return {
@@ -190,7 +205,7 @@
       }
     },
     components: {
-      TerminalItem
+      TerminalItem,TerminalSales
     }
   }
 </script>

@@ -35,8 +35,8 @@ export default {
       commit('viewChanged', view);
 
     },
-    newSale() {
-      commit('saleCreatred');
+    newSale({commit}) {
+      commit('saleCreated');
     },
     cancelSale({commit}) {
       commit('saleRemoved');
@@ -45,6 +45,10 @@ export default {
       commit('saleRemoved');
     },
     finaliseSale({commit}) {
+    },
+    selectSale({commit, state}, saleId) {
+      if(saleId >= 0 && saleId < state.saleList.length)
+        commit('saleSelected', saleId);
     },
     enterCode(code) {
 
@@ -63,7 +67,7 @@ export default {
   mutations: {
     saleCreated(state) {
       state.saleList.push(emptySale());
-      state.saleId = state.saleLlist.length - 1;
+      state.saleId = state.saleList.length - 1;
     },
     saleRemoved(state) {
       state.saleList.splice(state.saleId,1);
@@ -71,6 +75,9 @@ export default {
         state.saleList.push(emptySale());
       else if(state.saleList.length >= state.saleId)
         state.saleId = state.saleList.length - 1;
+    },
+    saleSelected(state, saleId) {
+      state.saleId = saleId;
     },
     viewChanged(state, view) {
       state.screen = view;
