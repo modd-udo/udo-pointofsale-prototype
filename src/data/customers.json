@@ -1,0 +1,81 @@
+[
+  {
+    "id": 2001,
+    "title": "John Smith",
+    "userfirst": "John",
+    "userlast": "Smith",
+    "useremail": "johnsmith542@gmail.com",
+    "userphone": "03 9000 2001",
+    "usermobile": "0400 002 001",
+    "subscriptions": [],
+    "loyaltycards": [
+      {
+        "id": 788800042001,
+        "issued": "2017-01-02",
+        "active": false
+      }
+    ]
+  },
+  {
+    "id": 2002,
+    "title": "Arron Citizen",
+    "userfirst": "Arron",
+    "userlast": "Citizen",
+    "useremail": "arron@citizen.id.au",
+    "userphone": "03 9000 2002",
+    "usermobile": "0400 002 002",
+    "subscriptions": [],
+    "loyaltycards": [
+      {
+        "id": 788800042002,
+        "issued": "2017-01-02",
+        "active": false
+      }
+    ]
+  },
+  {
+    "id": 2003,
+    "title": "Bazzle Jones",
+    "userfirst": "Bazzle",
+    "userlast": "jones",
+    "useremail": "b.jones@department.organisation.vic.edu.au",
+    "userphone": "03 9000 2003",
+    "usermobile": "0400 002 003",
+    "subscriptions": [],
+    "loyaltycards": [
+      {
+        "id": 788800042002,
+        "issued": "2017-01-02",
+        "active": false
+      }
+    ]
+  },
+  {
+    "id": 2004,
+    "title": "Casey Xu",
+    "userfirst": "Casey",
+    "userlast": "Xu",
+    "useremail": "caseyxu@173.com",
+    "userphone": "03 9000 2004",
+    "usermobile": "0400 002 004",
+    "subscriptions": [],
+    "loyaltycards": [
+      {
+        "id": 788800042004,
+        "issued": "2017-01-02",
+        "active": false
+      }
+    ]
+  },
+  {
+    "id": 2005,
+    "title": "Warren Kirran",
+    "userfirst": "Warren",
+    "userlast": "Kirran",
+    "useremail": "wazza100@gmail.com",
+    "userphone": "03 9000 2005",
+    "usermobile": "0400 002 005",
+    "subscriptions": [],
+    "loyaltycards": []
+  }
+]

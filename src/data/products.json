@@ -1,0 +1,228 @@
+[
+  {
+    "id": 1001,
+    "code": "SUMDRESS-YEL-S",
+    "gtin": "10001001",
+    "sku": "",
+    "title": "Summer Dress - Yellow Small",
+    "stock": {
+      "avail": 3,
+      "hold": 1,
+      "order": [
+        {
+          "qty": 5,
+          "eta": "2017-04-01"
+        }
+      ]
+    },
+    "price": {
+      "inc": 525,
+      "ex": 0
+    }
+  },
+  {
+    "id": 1002,
+    "code": "SUMDRESS-YEL-M",
+    "gtin": "10001002",
+    "sku": "",
+    "title": "Summer Dress - Yellow Medium",
+    "stock": {
+      "avail": 3,
+      "hold": 1,
+      "order": [
+        {
+          "qty": 5,
+          "eta": "2017-04-01"
+        }
+      ]
+    },
+    "price": {
+      "inc": 525,
+      "ex": 0
+    }
+  },
+  {
+    "id": 1003,
+    "code": "SUMDRESS-YEL-L",
+    "gtin": "10001003",
+    "sku": "",
+    "title": "Summer Dress - Yellow Large",
+    "stock": {
+      "avail": 3,
+      "hold": 1,
+      "order": [
+        {
+          "qty": 5,
+          "eta": "2017-04-01"
+        }
+      ]
+    },
+    "price": {
+      "inc": 525,
+      "ex": 0
+    }
+  },
+  {
+    "id": 1011,
+    "code": "SUMDRESS-BL-S",
+    "gtin": "10001011",
+    "sku": "",
+    "title": "Summer Dress - Black Small",
+    "stock": {
+      "avail": 0,
+      "hold": 1,
+      "order": [
+        {
+          "qty": 5,
+          "eta": "2017-04-01"
+        }
+      ]
+    },
+    "price": {
+      "inc": 525,
+      "ex": 0
+    }
+  },
+  {
+    "id": 1012,
+    "code": "SUMDRESS-BL-M",
+    "gtin": "10001012",
+    "sku": "",
+    "title": "Summer Dress - Black Medium",
+    "stock": {
+      "avail": 0,
+      "hold": 1,
+      "order": [
+        {
+          "qty": 5,
+          "eta": "2017-04-01"
+        }
+      ]
+    },
+    "price": {
+      "inc": 525,
+      "ex": 0
+    }
+  },
+  {
+    "id": 1013,
+    "code": "SUMDRESS-BL-L",
+    "gtin": "10001013",
+    "sku": "",
+    "title": "Summer Dress - Black Large",
+    "stock": {
+      "avail": 0,
+      "hold": 1,
+      "order": [
+        {
+          "qty": 5,
+          "eta": "2017-04-01"
+        }
+      ]
+    },
+    "price": {
+      "inc": 525,
+      "ex": 0
+    }
+  },
+  {
+    "id": 1021,
+    "code": "KIKICHELSEA-BLK-35",
+    "gtin": "10001021",
+    "sku": "42K07LBLK35",
+    "title": "KIKI Chelsea Boots - Black Leather Size 35",
+    "stock": {
+      "avail": 3,
+      "hold": 0,
+      "order": [
+        {
+          "qty": 5,
+          "eta": "2017-04-01"
+        }
+      ]
+    },
+    "price": {
+      "inc": 74.80,
+      "ex": 0
+    }
+  },
+  {
+    "id": 1022,
+    "code": "KIKICHELSEA-BLK-36",
+    "gtin": "10001022",
+    "sku": "42K07LBLK36",
+    "title": "KIKI Chelsea Boots - Black Leather Size 36",
+    "stock": {
+      "avail": 3,
+      "hold": 0,
+      "order": [
+        {
+          "qty": 5,
+          "eta": "2017-04-01"
+        }
+      ]
+    },
+    "price": {
+      "inc": 74.80,
+      "ex": 0
+    }
+  },
+  {
+    "id": 1023,
+    "code": "KIKICHELSEA-BLK-37",
+    "gtin": "10001023",
+    "sku": "42K07LBLK37",
+    "title": "KIKI Chelsea Boots - Black Leather Size 37",
+    "stock": {
+      "avail": 3,
+      "hold": 0,
+      "order": [
+        {
+          "qty": 5,
+          "eta": "2017-04-01"
+        }
+      ]
+    },
+    "price": {
+      "inc": 74.80,
+      "ex": 0
+    }
+  },
+  {
+    "id": 1024,
+    "code": "KIKICHELSEA-BLK-38",
+    "gtin": "10001024",
+    "sku": "42K07LBLK38",
+    "title": "KIKI Chelsea Boots - Black Leather Size 38",
+    "stock": {
+      "avail": 0,
+      "hold": 0,
+      "order": [
+        {
+          "qty": 5,
+          "eta": "2017-04-01"
+        }
+      ]
+    },
+    "price": {
+      "inc": 74.80,
+      "ex": 0
+    }
+  },
+  {
+    "id": 1025,
+    "code": "KIKICHELSEA-BLK-39",
+    "gtin": "10001025",
+    "sku": "42K07LBLK39",
+    "title": "KIKI Chelsea Boots - Black Leather Size 39",
+    "stock": {
+      "avail": 0,
+      "hold": 0,
+      "order": []
+    },
+    "price": {
+      "inc": 74.80,
+      "ex": 0
+    }
+  }
+]
