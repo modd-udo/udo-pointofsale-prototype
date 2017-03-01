@@ -31,6 +31,10 @@ export default {
 
   },
   actions: {
+    switchView({commit}, view) {
+      commit('viewChanged', view);
+
+    },
     newSale() {
       commit('saleCreatred');
     },
@@ -57,17 +61,20 @@ export default {
 
   },
   mutations: {
-    saleCreated({state}) {
+    saleCreated(state) {
       state.saleList.push(emptySale());
       state.saleId = state.saleLlist.length - 1;
     },
-    saleRemoved({state}) {
+    saleRemoved(state) {
       state.saleList.splice(state.saleId,1);
       if(state.saleList.length == 0)
         state.saleList.push(emptySale());
       else if(state.saleList.length >= state.saleId)
         state.saleId = state.saleList.length - 1;
     },
+    viewChanged(state, view) {
+      state.screen = view;
+    }
   },
 
 };

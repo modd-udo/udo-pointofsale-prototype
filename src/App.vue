@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="top-menu-bar">
-      <button class="button" @click="view='Dashboard'">Dashboard</button>
-      <button class="button" @click="view='Terminal'">POS Terminal</button>
+      <button class="button" @click="switchView('Dashboard')">Dashboard</button>
+      <button class="button" @click="switchView('Terminal')">POS Terminal</button>
       <a class="button" href="/admin/">Return to Udo</a>
     </div>
     <div id="pos-body">
@@ -17,16 +17,22 @@ import Terminal from './components/Terminal'
 
 export default {
   name: 'app',
-  data() {
-    return {
-      view: "Dashboard",
-    };
+  computed: {
+    view() {
+      return this.$store.state.pos.screen;
+    }
+  },
+  methods: {
+    switchView(view) {
+      this.$store.dispatch('pos/switchView',view);
+    },
   },
   components: {
     Dashboard,
     Terminal,
   }
 }
+
 
 </script>
 
@@ -56,5 +62,6 @@ html, body {
   display:flex;
   width:100%;
 }
+
 
 </style>
