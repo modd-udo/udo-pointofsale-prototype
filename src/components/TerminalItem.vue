@@ -2,7 +2,7 @@
   <div class="pos-terminal-item callout">
     <div class="row">
       <div class="column large-3">
-        <div><strong>{{item.code}}</strong></div>
+        <div><strong>{{item.info.code}}</strong></div>
         <div class="button-group">
           <button class="button"
                   :class="item.mode == 'purchase'?'success':'secondary'"
@@ -25,9 +25,9 @@
         </div>
       </div>
       <div class="column large-5">
-        <h4>{{item.title}}</h4>
-        <div>SKU {{item.sku}}</div>
-        <div>GS1 {{item.gs1}}</div>
+        <h4>{{item.info.title}}</h4>
+        <div>SKU: {{item.info.sku}}</div>
+        <div>GTIN: {{item.info.gtin}}</div>
         <div v-if="item.mode == 'return'">
           <div>Reason for Return</div>
           <input type="text" v-model="item.returnReason"/>
@@ -49,7 +49,7 @@
         <div class="row collapse">
           <div class="column small-6">Price</div>
           <div class="column small-6 text-right"><h5>$
-            {{item.price.toFixed(2)}}</h5></div>
+            {{price.toFixed(2)}}</h5></div>
         </div>
         <div class="row collapse">
           <div class="column small-4">Discount</div>
@@ -97,41 +97,29 @@
 </style>
 <script lang="babel">
   export default{
-    data() {
-      return {
-        item: {
-          title: "Yellow Summery Dress - Small",
-          code: "DR-SMR-YEL-SM",
-          stockQty: 3,
-          sku: "000000112144",
-          gs1: "1323000401332233",
-          quantity: 1,
-          price: 525,
-          discountType: "percent", //percent|dollar
-          discountAmount: 0,
-          discountReason: "",
-          mode: "purchase", //return|purchase,
-          returnReason: "",
-          returnStock: "hold", //restock
-          returnInvoice: "",
-        }
-      };
+    props: {
+      item: Object,
     },
+    data() { return {}; },
     computed: {
+      price() {
+        return this.item.info.price.inc + this.item.info.price.ex;
+      },
       subtotal() {
         const qty = parseInt(this.item.quantity) || 0;
+        const price = this.price;
         let discount = 0;
         if (this.item.discountAmount > 0) {
           let amount = Number(this.item.discountAmount) || 0;
           if (this.item.discountType == 'percent')
-            discount = this.item.price * (amount / 100);
+            discount = price * (amount / 100);
           if (this.item.discountType == 'dollar')
             discount = amount;
         }
-        discount = Math.max(0, Math.min(this.item.price, discount));
+        discount = Math.max(0, Math.min(price, discount));
         if (this.item.mode == 'return')
           return -1 * qty * (this.item.price - discount);
-        return qty * (this.item.price - discount);
+        return qty * (price - discount);
       }
     },
     components: {}
